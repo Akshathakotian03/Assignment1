@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-relaxed tracking-wide">
+  <!-- Header -->
+  <header class="bg-blue-700 text-white p-6 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Wanderlust</h1>
+      <nav class="flex gap-4">
+        <a href="#about" class="hover:text-blue-300">About</a>
+        <a href="#destinations" class="hover:text-blue-300">Destinations</a>
+        <a href="#contact" class="hover:text-blue-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-96 flex items-center justify-center text-center" style="background-image: url('https://via.placeholder.com/1920x600');">
+    <div class="bg-black bg-opacity-50 p-10 rounded shadow-lg">
+      <h2 class="text-4xl font-extrabold text-white">Explore the World with Us</h2>
+      <p class="text-white mt-4">Discover breathtaking destinations and unforgettable experiences.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-10 px-6">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">About Us</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <p class="text-gray-600 mb-4">Welcome to Wanderlust, your ultimate travel blog for inspiring stories and breathtaking photography from around the globe.</p>
+        <p class="text-gray-600">Join us on a journey of discovery as we uncover hidden gems, share travel tips, and celebrate the beauty of our world.</p>
+      </div>
+      <img src="img.jpg" alt="About Us" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="bg-white py-10 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Top Destinations</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-50 border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+          <img src="paris.jpg" alt="Destination 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-700">Paris</h3>
+            <p class="text-gray-600 mt-2">Experience the romance of the Eiffel Tower and the charm of Parisian streets.</p>
+          </div>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+          <img src="bali.jpg" alt="Destination 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-700">Bali</h3>
+            <p class="text-gray-600 mt-2">Relax on pristine beaches and explore the vibrant culture of Bali.</p>
+          </div>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+          <img src="tokyo.jpg" alt="Destination 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-gray-700">Tokyo</h3>
+            <p class="text-gray-600 mt-2">Dive into the bustling energy of Tokyo and enjoy its incredible cuisine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-50 py-10 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+      <form class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-medium">Name</label>
+          <input type="text" id="name" class="w-full mt-2 p-2 border border-gray-300 rounded" placeholder="Your Name">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-medium">Email</label>
+          <input type="email" id="email" class="w-full mt-2 p-2 border border-gray-300 rounded" placeholder="Your Email">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 font-medium">Message</label>
+          <textarea id="message" class="w-full mt-2 p-2 border border-gray-300 rounded" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button class="bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-800">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white py-4 text-center">
+    <p>&copy; 2024 Wanderlust. All rights reserved.</p>
+  </footer>
+</body>
+</html>
